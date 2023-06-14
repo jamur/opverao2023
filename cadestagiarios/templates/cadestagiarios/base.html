@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'cadestagiarios/style.css' %}">
+
+    <title>{% block title %}Cadastro de Estagiários - Operação Verão 2007/2008{% endblock %}</title>
+</head>
+
+<body>
+    <div id="sidebar">
+        {% block sidebar %}
+        <ul>
+            <li><a href="/">Início</a></li>
+            <li><a href="/admin/">Admin</a></li>
+            <li><a href="/admin/cadestagiarios/estagiario/">Estagiários</a></li>
+            <li><a href="/valores/">Valores</a></li>
+            <li><a href="/nomes/">Nomes</a></li>
+            <li><a href="/telefones/">Telefones</a></li>
+            <li><a href="/falta_pagamento/">Pagamento</a></li>
+            <li><a href="/falta_pagamento_texto/">Pag. texto</a></li>
+            <li><a href="/falta_pagamento_texto_so_valor/">Pag. Valor</a></li>
+            <!-- <li><a href="/blog/">Blog</a></li> -->
+        </ul>
+        {% endblock %}
+    </div>
+
+    <div id="content">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>

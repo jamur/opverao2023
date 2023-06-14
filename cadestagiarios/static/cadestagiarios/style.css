@@ -1,0 +1,11 @@
+li a {
+    color: green;
+}
+
+body {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(images/background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  /* background: rgba(162, 182, 198, 0.653) url("images/background.jpg"); */
+}

@@ -1,0 +1,11 @@
+{% extends "admin/base.html" %}
+{% load i18n %}
+
+{% block title %}{{ title }} | {% trans 'Operação Verão' %}{% endblock %}
+
+{% block branding %}
+<h1 id="site-name">{% trans 'Operação Verão' %}</h1>
+<a href="http://localhost:8000">Início</a>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}
